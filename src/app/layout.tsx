@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "@/_components/_ui/header";
+import Header from "@/_components/_ui/_header/header";
 
 const openSans = Open_Sans({
   variable: "--font-open-sans",
