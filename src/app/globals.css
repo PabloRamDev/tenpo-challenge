@@ -5,7 +5,7 @@
   --foreground: #171717;
 }
 
-@theme {
+@theme inline{
   --color-neutral-0: #FFFFFF;
   --color-neutral-50: #EEEEEE;
   --color-neutral-100: #E7E7E7;
@@ -47,7 +47,9 @@
   --color-secondary-600: #008FCC; 
   --color-secondary-700: #006B99; 
   --color-secondary-800: #004766;
-  --color-secondary-900: #002433;   
+  --color-secondary-900: #002433;
+  --font-graphie: var(--font-graphie);
+  --font-open-sans: var(--font-open-sans);   
 }
 
 @media (prefers-color-scheme: dark) {
