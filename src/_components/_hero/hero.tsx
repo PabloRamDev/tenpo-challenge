@@ -74,7 +74,7 @@ export default function Hero() {
 
     heroTween.to("#circle-ref", {
       y: "100%",
-      scale: 0
+      scale: 0,
     });
 
     heroTween.to(
@@ -107,27 +107,34 @@ export default function Hero() {
   return (
     <section
       id="hero-section"
-      className="relative py-xl flex md:my-xl min-h-screen w-full items-center md:items-start justify-center"
+      className="relative py-xl flex md:my-xl min-h-screen w-full justify-start md:items-start md:justify-center"
     >
       <div
         id="circle-ref"
-        className="absolute -top-1 md:top-[-30%] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary-400 h-[1000px] md:h-[2000px] w-[1000px] md:w-[2000px] aspect-square  rounded-full -z-[1]"
+        className="absolute top-[25%] md:top-[-30%] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary-400 h-[1000px] md:h-[2000px] w-[1000px] md:w-[2000px] aspect-square  rounded-full -z-[1]"
       />
-      <div className="relative flex flex-col items-center justify-center gap-xs md:top-3xl">
+      <div className="relative flex flex-col justify-start items-center md:justify-center h-auto gap-xs py-xl top-3xl">
+        <div className="w-3/4 md:w-auto">
+         <Image
+          src={"/images/tepago-go-white.png"}
+          alt="Phone with tepago app"
+          width={502}
+          height={502}
+        />
+        </div>
         <h1
           id="hero-h1"
-          className="font-open-sans font-bold text-xl justify-center items-center"
+          className="font-open-sans text-lg md:text-xl text-center md:text-start"
         >
-          Una sola cuenta, sin cuentos
+          Tu cuenta, sin cuentos
         </h1>
-        <p id="hero-p">
+        <p id="hero-p" className="text-center md:text-start">
           Compra, paga, ahorra y envía dinero sin cobros. Todo claro, sin
           cuentos.
         </p>
-        <div id="hero-actions" className="flex gap-xs w-full md:w-3/4">
+        <div id="hero-actions" className="flex gap-xs w-full md:w-3/4 justify-center">
           <CtaButton> Comienza ya </CtaButton>
-                 <CtaButton> Pedir tarjeta física </CtaButton>
-    
+          <CtaButton> Pedir tarjeta </CtaButton>
         </div>
       </div>
       <div id="hero-phone" className="hidden md:flex absolute top-0 left-0">
