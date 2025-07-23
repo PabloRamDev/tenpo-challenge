@@ -12,7 +12,7 @@ export default function Hero() {
 
 
     gsap.from("#hero-phone", {
-      y: 250,
+      y: 250, 
       duration: 1,
       opacity:0,
       scale: 1.1,
@@ -55,16 +55,18 @@ export default function Hero() {
     })
   }, [])
   return (
-    <section id="hero-section" className="relative top-2xl flex my-xl min-h-screen items-start justify-center">
+    <section id="hero-section" className="relative py-xl md:top-2xl flex md:my-xl min-h-screen w-full items-center md:items-start justify-center">
       <Image
         id="hero-phone"
         src={"/images/hero-phone.png"}
         alt="Phone with tepago app"
         width={648}
         height={648}
-        className="absolute top-0 left-0"
+        className="hidden md:flex absolute top-0 left-0"
       />
-      <div className="relative flex flex-col items-center justify-center gap-xs top-3xl">
+          <div id="circle-ref" className="absolute md:hidden -top-1 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary-400 h-full w-[1000px] rounded-full -z-[1]" />
+      <div className="relative flex flex-col items-center justify-center gap-xs md:top-3xl">
+    
         <h1 id="hero-h1" className="font-open-sans font-bold text-xl justify-center items-center">
           Una sola cuenta, sin cuentos
         </h1>
@@ -83,6 +85,7 @@ export default function Hero() {
         alt="moneybag 3d emoji"
         width={250}
         height={250}
+        sizes="(max-width: 768px) 100px, (max-width: 1200px) 250px, 250px"
         className="absolute top-[5%] right-[10%]"
       />
         <Image
