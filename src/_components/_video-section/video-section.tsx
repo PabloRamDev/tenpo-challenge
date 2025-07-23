@@ -55,7 +55,7 @@ export default function VideoSection() {
           ease: "none",
           scrollTrigger: {
             trigger: videoSequenceTriggerRef.current,
-            start: "center center",
+            start: "center 60%",
             end: `+=${window.innerHeight * 3}`,
             scrub: true,
             pin: true,

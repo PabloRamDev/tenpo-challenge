@@ -13,7 +13,7 @@ export default function Home() {
 
   
   return (
-    <main className="flex flex-col gap-xl md:px-2xl overflow-x-clip">
+    <main className="flex flex-col gap-xl md:px-2xl overflow-x-clip h-auto">
       <Hero />
       <Benefits/>
       <ParallaxSection />
