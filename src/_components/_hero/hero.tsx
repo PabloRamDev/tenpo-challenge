@@ -55,7 +55,7 @@ export default function Hero() {
     })
   }, [])
   return (
-    <section className="relative top-2xl flex mt-xl h-[648px] items-start justify-center">
+    <section className="relative top-2xl flex my-xl min-h-screen items-start justify-center">
       <Image
         id="hero-phone"
         src={"/images/hero-phone.png"}
@@ -83,7 +83,7 @@ export default function Hero() {
         alt="moneybag 3d emoji"
         width={250}
         height={250}
-        className="absolute top-[10%] right-[10%]"
+        className="absolute top-[5%] right-[10%]"
       />
         <Image
         id="hero-pig"
@@ -91,7 +91,7 @@ export default function Hero() {
         alt="pig 3d emoji"
         width={452}
         height={452}
-        className="absolute bottom-0 right-[10%]"
+        className="absolute bottom-[30%] right-[10%]"
       />
     </section>
   );
