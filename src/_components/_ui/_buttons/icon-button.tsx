@@ -11,10 +11,7 @@ interface IconButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> 
 }
 
 const variantClasses = {
-  default: 'bg-blue-600 hover:bg-blue-700 text-white',
-  ghost: 'bg-transparent hover:bg-gray-100 text-gray-700',
-  outline: 'border border-gray-300 hover:bg-gray-100 text-gray-700',
-  danger: 'bg-red-600 hover:bg-red-700 text-white',
+  default: 'bg-primary-900 hover:bg-blue-700 text-text-0',
 };
 
 export const IconButton = ({
