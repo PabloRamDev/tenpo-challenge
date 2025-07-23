@@ -1,11 +1,23 @@
+"use client"
 import Image from "next/image";
 import React from "react";
 import CtaButton from "../_ui/_buttons/cta-button";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 export default function Hero() {
+
+  useGSAP(() => {
+    gsap.from("#hero-phone", {
+      y: 250,
+      duration: 1,
+      ease: 'power1.in'
+    })
+  }, [])
   return (
     <section className="relative top-2xl flex mt-xl h-[648px] items-start justify-center">
       <Image
+        id="hero-phone"
         src={"/images/hero-phone.png"}
         alt="Phone with tepago app"
         width={648}
@@ -26,6 +38,7 @@ export default function Hero() {
         </div>
       </div>
        <Image
+       id="hero-moneybag"
         src={"/images/moneybag.png"}
         alt="moneybag 3d emoji"
         width={250}
@@ -33,6 +46,7 @@ export default function Hero() {
         className="absolute top-[10%] right-[10%]"
       />
         <Image
+        id="hero-pig"
         src={"/images/pig.png"}
         alt="pig 3d emoji"
         width={402}
