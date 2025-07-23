@@ -55,7 +55,7 @@ export default function Hero() {
     })
   }, [])
   return (
-    <section className="relative top-2xl flex my-xl min-h-screen items-start justify-center">
+    <section id="hero-section" className="relative top-2xl flex my-xl min-h-screen items-start justify-center">
       <Image
         id="hero-phone"
         src={"/images/hero-phone.png"}

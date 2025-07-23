@@ -41,7 +41,7 @@ const backgroundCardRef = useRef<cardRefElement>(null);
 
 
   return (
-    <section className="relative flex mt-xl min-h-[870px] items-center justify-start bg-gradient-to-br from-primary-900 to-secondary-900 rounded-4xl px-2xl">
+    <section id="parallax-section" className="relative flex mt-xl min-h-[870px] items-center justify-start bg-gradient-to-br from-primary-900 to-secondary-900 rounded-4xl px-2xl">
       <div className="relative left-0 flex flex-col items-start justify-start gap-md">
         <h2 className="font-graphie text-text-0 text-xl justify-center items-center leading-[90%]">
           Paga en todas partes,
