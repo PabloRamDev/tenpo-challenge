@@ -111,7 +111,7 @@ export default function Hero() {
     >
       <div
         id="circle-ref"
-        className="absolute top-[25%] md:top-[-30%] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary-400 h-[1000px] md:h-[2000px] w-[1000px] md:w-[2000px] aspect-square  rounded-full -z-[1]"
+        className="absolute top-[25%] md:top-[-10%] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary-400 h-[1000px] md:h-[2000px] w-[1000px] md:w-[2000px] aspect-square  rounded-full -z-[1]"
       />
       <div className="relative flex flex-col justify-start items-center md:justify-center h-auto gap-xs py-xl top-3xl">
         <div className="w-3/4 md:w-auto">

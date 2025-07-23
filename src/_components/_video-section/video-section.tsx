@@ -69,14 +69,17 @@ export default function VideoSection() {
 
   return (
         <section ref={videoSequenceTriggerRef} id="video-section" className="relative flex flex-col md:flex-row my-xl md:h-[867px] w-full items-start justify-start md:items-center md:justify-between">
-      <div className="relative md:top-0 flex flex-col justify-center gap-xs px-lg md:px-2xl">
-        <h2 className="font-graphie text-lg md:text-xl justify-center items-center text-center">
-          Prueba tepago app 📱
+      <div className="relative md:top-0 flex flex-col justify-center items-start gap-xs px-lg md:px-2xl">
+          <h2 className="font-graphie text-text-900 text-xl d:text-xl text-center md:text-start leading-[90%]">
+          nueva tepago app
         </h2>
-        <p className="text-center" >
+        <p className="text-center md:text-start" >
    Lleva tepago contigo a todos lados: administra tu cuenta, realiza pagos y transferencias en una sola aplicación.
 La libertad financiera nunca fue tan fácil 💸.
         </p>
+          
+    <CtaButton>Descargar</CtaButton>
+
       </div>
       
    <div className="relative top-0 right-0 justify-self-end h-[700px] md:h-full w-full md:bg-radial from-primary-300 to-primary-400  md:aspect-square md:rounded-3xl">
@@ -84,9 +87,7 @@ La libertad financiera nunca fue tan fácil 💸.
     className="absolute top-1/2 left-1/2 h-full w-auto -translate-x-[45%] -translate-y-[58%]"
     ref={canvasRef}
   />
-  <div className="flex w-full justify-center items-center bottom-0 px-lg md:px-2xl">
-    <CtaButton>Descargar</CtaButton>
-    </div>
+
 
 </div>
 
