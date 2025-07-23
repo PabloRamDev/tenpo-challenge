@@ -1,9 +1,10 @@
 "use client"
 import React, { useEffect, useRef } from "react";
-import CtaButton from "../_ui/_buttons/cta-button";
+
 import BackgroundCard from "./background-card";
 import MidgroundCard from "./midground-card";
 import ForegroundCard from "./foreground-card";
+import { CtaButton } from "../_ui/_buttons/cta-button";
 
 
 interface cardRefElement extends HTMLElement {
@@ -52,7 +53,7 @@ const backgroundCardRef = useRef<cardRefElement>(null);
          Te tenemos completamente cubierto,Agrega tu tarjeta a tu Wallet, o bien paga con nuestras tarjetas físicas sin contacto en todos los comercios 🛍️.
         </p>
         <div className="flex gap-xs w-auto">
-          <CtaButton text="Pedir tarjeta física" isPrimary={true} className={"bg-neutral-0"} />
+                 <CtaButton> Comienza ya </CtaButton>
         </div>
       </div>
       <div className="absolute right-0 bottom-40 flex h-1/2 w-1/2">

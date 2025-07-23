@@ -3,7 +3,8 @@ import React, { useEffect, useRef } from "react";
 import { iphoneimages } from "@/_lib/image-sequence";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import CtaButton from "../_ui/_buttons/cta-button";
+import { CtaButton } from "../_ui/_buttons/cta-button";
+
 
 export default function VideoSection() {
 
@@ -77,8 +78,8 @@ export default function VideoSection() {
 La libertad financiera nunca fue tan fácil 💸.
         </p>
         <div className="flex gap-xs w-3/4">
-          <CtaButton text="Comienza Ya!" isPrimary={true} />
-          <CtaButton text="Pedir tarjeta física" isPrimary={false} />
+                 <CtaButton> Comienza ya </CtaButton>
+        
         </div>
       </div>
       <div className="relative top-0 right-0 justify-self-end h-full bg-radial from-primary-300 to-primary-400 aspect-square rounded-3xl">
