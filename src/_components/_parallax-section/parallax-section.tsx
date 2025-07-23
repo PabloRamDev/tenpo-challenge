@@ -53,7 +53,7 @@ const backgroundCardRef = useRef<cardRefElement>(null);
          Te tenemos completamente cubierto,Agrega tu tarjeta a tu Wallet, o bien paga con nuestras tarjetas físicas sin contacto en todos los comercios 🛍️.
         </p>
         <div className="flex gap-xs w-auto">
-                 <CtaButton> Comienza ya </CtaButton>
+                 <CtaButton variant="secondary"> Comienza ya </CtaButton>
         </div>
       </div>
       <div className="absolute right-0 bottom-40 flex h-1/2 w-1/2">
