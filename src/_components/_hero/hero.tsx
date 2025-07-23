@@ -73,7 +73,7 @@ export default function Hero() {
     });
 
     heroTween.to("#circle-ref", {
-      y: "100%",
+      y: "-100%",
       scale: 0,
     });
 
@@ -107,32 +107,37 @@ export default function Hero() {
   return (
     <section
       id="hero-section"
-      className="relative py-xl flex md:my-xl min-h-screen w-full justify-start md:items-start md:justify-center"
+      className="relative py-xl flex md:my-xl h-screen md:h-[867px] w-full justify-start md:items-start md:justify-center"
     >
       <div
         id="circle-ref"
         className="absolute top-[25%] md:top-[-10%] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary-400 h-[1000px] md:h-[2000px] w-[1000px] md:w-[2000px] aspect-square  rounded-full -z-[1]"
       />
-      <div className="relative flex flex-col justify-start items-center md:justify-center h-auto gap-xs py-xl top-3xl">
-        <div className="w-3/4 md:w-auto">
-         <Image
-          src={"/images/tepago-go-white.png"}
-          alt="Phone with tepago app"
-          width={502}
-          height={502}
-        />
+      <div className="relative flex flex-col justify-start items-center md:justify-center h-auto gap-sm py-2xl md:top-3xl px-lg">
+        <div className="w-2/3 md:w-auto">
+          <Image
+            src={"/images/tepago-go-white.png"}
+            alt="Phone with tepago app"
+            width={502}
+            height={502}
+          />
         </div>
-        <h1
-          id="hero-h1"
-          className="font-open-sans text-lg md:text-xl text-center md:text-start"
+        <div className="flex flex-col gap-sm">
+          <h1
+            id="hero-h1"
+            className="font-open-sans text-lg md:text-xl text-center md:text-start leading-[100%]"
+          >
+            Tu cuenta, sin cuentos
+          </h1>
+          <p id="hero-p" className="text-center md:text-start">
+            Compra, paga, ahorra y envía dinero sin cobros. Todo claro, sin
+            cuentos.
+          </p>
+        </div>
+        <div
+          id="hero-actions"
+          className="flex gap-xs w-full md:w-3/4 justify-center"
         >
-          Tu cuenta, sin cuentos
-        </h1>
-        <p id="hero-p" className="text-center md:text-start">
-          Compra, paga, ahorra y envía dinero sin cobros. Todo claro, sin
-          cuentos.
-        </p>
-        <div id="hero-actions" className="flex gap-xs w-full md:w-3/4 justify-center">
           <CtaButton> Comienza ya </CtaButton>
           <CtaButton> Pedir tarjeta </CtaButton>
         </div>
@@ -148,7 +153,7 @@ export default function Hero() {
 
       <div
         id="hero-moneybag"
-        className="absolute top-0 right-[5%] w-[200px] md:w-auto"
+        className="absolute top-[10%] md:top-0 right-[5%] w-[120px] md:w-auto"
       >
         <Image
           src={"/images/moneybag.png"}
@@ -161,7 +166,7 @@ export default function Hero() {
 
       <div
         id="hero-pig"
-        className="absolute bottom-[10%] md:bottom-[40%] md:right-[10%] w-[300px] md:w-auto"
+        className="absolute bottom-[20%] right-[40%] md:bottom-[40%] md:right-[10%] w-[250px] md:w-auto"
       >
         <Image
           src={"/images/pig.png"}

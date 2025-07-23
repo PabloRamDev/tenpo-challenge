@@ -5,6 +5,7 @@ import BackgroundCard from "./background-card";
 import MidgroundCard from "./midground-card";
 import ForegroundCard from "./foreground-card";
 import { CtaButton } from "../_ui/_buttons/cta-button";
+import { useMediaQuery } from "react-responsive";
 
 
 interface cardRefElement extends HTMLElement {
@@ -12,11 +13,16 @@ interface cardRefElement extends HTMLElement {
 }
 export default function ParallaxSection() {
 
+  const isMobile = useMediaQuery({maxWidth: 767})
+
 const foregroundCardRef = useRef<cardRefElement>(null);
 const midgroundCardRef = useRef<cardRefElement>(null);
 const backgroundCardRef = useRef<cardRefElement>(null);
 
   useEffect(() => {
+    if(isMobile){
+      return;
+    }
     const onMove = ({ clientX, clientY } : {clientX: number, clientY: number}) => {
       const x = clientX - window.innerWidth / 2;
       const y = clientY - window.innerHeight / 2;
@@ -42,14 +48,14 @@ const backgroundCardRef = useRef<cardRefElement>(null);
 
 
   return (
-    <section id="parallax-section" className="relative py-2xl px-md md:px-2xl flex flex-col md:flex-row mt-xl min-h-[870px] items-center justify-start md:justify-between bg-gradient-to-br from-neutral-900 to-primary-900 md:rounded-4xl">
+    <section id="parallax-section" className="relative py-2xl px-md md:px-2xl flex flex-col md:flex-row mt-xl h-screen md:min-h-[870px] items-center justify-start md:justify-between bg-gradient-to-br from-neutral-900 to-primary-900 md:rounded-4xl">
       <div className="relative left-0 flex flex-col items-center md:items-start justify-start gap-md">
-        <h2 className="font-graphie text-text-0 text-xl d:text-xl text-center md:text-start leading-[90%]">
+        <h2 className="font-graphie text-text-0 text-lg md:text-xl text-center md:text-start leading-[90%]">
           Paga en todas partes,
           <br/>
           de la forma que quieras
         </h2>
-        <p className="font-open-sans text-text-0 w-full md:w-1/2">
+        <p className="font-open-sans text-center md:text-start text-text-0 w-full md:w-1/2">
          Te tenemos completamente cubierto,Agrega tu tarjeta a tu Wallet, o bien paga con nuestras tarjetas físicas sin contacto en todos los comercios 🛍️.
         </p>
         <div className="flex gap-xs w-auto">
