@@ -1,9 +1,6 @@
 "use client"
-import Image from "next/image";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef} from "react";
 import CtaButton from "../_ui/_buttons/cta-button";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
 import BackgroundCard from "./background-card";
 import MidgroundCard from "./midground-card";
 import ForegroundCard from "./foreground-card";
