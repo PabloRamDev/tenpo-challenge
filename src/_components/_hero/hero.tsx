@@ -75,6 +75,8 @@ export default function Hero() {
     heroTween.to("#circle-ref", {
       y: "-100%",
       scale: 0,
+      ease: "power0.inOut",
+
     });
 
     heroTween.to(
