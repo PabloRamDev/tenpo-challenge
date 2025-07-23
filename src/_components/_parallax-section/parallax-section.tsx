@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useRef} from "react";
+import React, { useEffect, useRef } from "react";
 import CtaButton from "../_ui/_buttons/cta-button";
 import BackgroundCard from "./background-card";
 import MidgroundCard from "./midground-card";
@@ -9,8 +9,7 @@ import ForegroundCard from "./foreground-card";
 interface cardRefElement extends HTMLElement {
     moveTo: (x: number, y: number) => void;
 }
-export default function CardsSection() {
-  // const timeline = gsap.timeline();
+export default function ParallaxSection() {
 
 const foregroundCardRef = useRef<cardRefElement>(null);
 const midgroundCardRef = useRef<cardRefElement>(null);
@@ -42,7 +41,7 @@ const backgroundCardRef = useRef<cardRefElement>(null);
 
 
   return (
-    <section className="relative flex mt-xl min-h-[870px] items-center justify-start bg-gradient-to-br from-neutral-900 to-primary-900 rounded-4xl px-2xl">
+    <section className="relative flex mt-xl min-h-[870px] items-center justify-start bg-gradient-to-br from-primary-900 to-secondary-900 rounded-4xl px-2xl">
       <div className="relative left-0 flex flex-col items-start justify-start gap-md">
         <h2 className="font-graphie text-text-0 text-xl justify-center items-center leading-[90%]">
           Paga en todas partes,

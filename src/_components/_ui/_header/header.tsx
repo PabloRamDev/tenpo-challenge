@@ -1,3 +1,4 @@
+"use client"
 import { navLinks } from '@/_lib/header-data'
 import React from 'react'
 import NavLink from './nav-link'

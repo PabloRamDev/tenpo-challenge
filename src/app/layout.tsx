@@ -3,7 +3,9 @@ import { Open_Sans } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/_components/_ui/_header/header";
-
+import gsap from "gsap";
+import { ScrollTrigger, SplitText} from "gsap/all"
+;
 const openSans = Open_Sans({
   variable: "--font-open-sans",
   subsets: ["latin"],
@@ -25,10 +27,14 @@ const graphie = localFont({
   variable: "--font-graphie"
 })
 
+gsap.registerPlugin(ScrollTrigger, SplitText);
+
 export const metadata: Metadata = {
   title: "Tepago - Tenpo Challenge",
   description: "Diseñado y desarrollado por Pabloram.dev",
 };
+
+
 
 export default function RootLayout({
   children,
