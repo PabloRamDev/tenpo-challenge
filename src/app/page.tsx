@@ -14,7 +14,7 @@ export default function Home() {
 
   
   return (
-    <main className="relative flex flex-col gap-xl md:px-2xl overflow-x-clip">
+    <main className="relative flex flex-col gap-xl md:px-2xl overflow-x-clip py-xl">
       <Hero />
       <Benefits/>
       <ParallaxSection />

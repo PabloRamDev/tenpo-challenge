@@ -152,7 +152,7 @@ export default function Hero() {
 
       <div
         id="hero-moneybag"
-        className="absolute top-[10%] md:top-[25%] right-[5%] w-[120px] md:w-auto"
+        className="absolute top-[5%] md:top-[15%] right-[5%] w-[120px] md:w-auto"
       >
         <Image
           src={"/images/moneybag.png"}
@@ -165,7 +165,7 @@ export default function Hero() {
 
       <div
         id="hero-pig"
-        className="absolute bottom-[20%] right-[40%] md:bottom-[40%] md:right-[10%] w-[250px] md:w-auto"
+        className="absolute bottom-[30%] right-[40%] md:bottom-[40%] md:right-[10%] w-[250px] md:w-auto"
       >
         <Image
           src={"/images/pig.png"}

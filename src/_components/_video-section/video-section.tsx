@@ -55,9 +55,9 @@ export default function VideoSection() {
           ease: "none",
           scrollTrigger: {
             trigger: videoSequenceTriggerRef.current,
-            start: "center 60%",
+            start: "center center",
             // end: "bottom bottom",
-            end: `+=${window.innerHeight - 88 * 3}`,
+            end: `+=${window.innerHeight * 3}`,
             scrub: true,
             pin: true,
             anticipatePin: 1,
@@ -73,7 +73,7 @@ export default function VideoSection() {
     <section
       className="relative h-full w-full"
     >
-      <div id="video-section" ref={videoSequenceTriggerRef} className="h-screen md:h-[867px] w-full flex flex-col md:flex-row py-xl md:py-0 items-start justify-start md:items-center md:justify-between">
+      <div id="video-section" ref={videoSequenceTriggerRef} className="relative h-screen md:h-[867px] w-full flex flex-col md:flex-row py-xl md:py-0 items-start justify-start md:items-center md:justify-between">
       <div className="relative md:top-0 flex flex-col justify-center items-center md:items-start gap-xs px-lg md:px-2xl">
         <h2 className="font-graphie text-text-900 text-lg md:text-xl text-center md:text-start leading-[90%]">
           nueva tepago app
@@ -87,7 +87,7 @@ export default function VideoSection() {
         <CtaButton>Descargar</CtaButton>
       </div>
 
-      <div className="relative top-1/4 md:top-0 right-0 justify-self-end h-auto w-full md:bg-radial from-primary-300 to-primary-400  md:aspect-square md:rounded-3xl">
+      <div className="relative top-1/4 md:top-0 right-0 justify-self-end max-h-[867px] h-full md:bg-radial from-primary-300 to-primary-400  md:aspect-square md:rounded-3xl">
         <canvas
           className="absolute top-1/2 left-1/2 h-[400px] md:h-[800px] w-auto -translate-x-[45%] -translate-y-[50%]"
           ref={canvasRef}
