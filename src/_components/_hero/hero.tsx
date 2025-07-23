@@ -130,8 +130,7 @@ export default function Hero() {
             Tu cuenta, sin cuentos
           </h1>
           <p id="hero-p" className="text-center md:text-start">
-            Compra, paga, ahorra y envía dinero sin cobros. Todo claro, sin
-            cuentos.
+            Compra, paga, ahorra y envía dinero sin cobros. Todo rápido y seguro.
           </p>
         </div>
         <div

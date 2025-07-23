@@ -6,7 +6,7 @@ import gsap from "gsap";
 import { CtaButton } from "../_ui/_buttons/cta-button";
 
 export default function VideoSection() {
-  const videoSequenceTriggerRef = useRef<HTMLElement>(null);
+  const videoSequenceTriggerRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useGSAP(
@@ -56,10 +56,11 @@ export default function VideoSection() {
           scrollTrigger: {
             trigger: videoSequenceTriggerRef.current,
             start: "center 60%",
-            end: `+=${window.innerHeight * 3}`,
+            // end: "bottom bottom",
+            end: `+=${window.innerHeight - 88 * 3}`,
             scrub: true,
             pin: true,
-            markers: true,
+            anticipatePin: 1,
           },
           onUpdate: updateImage,
         });
@@ -70,10 +71,9 @@ export default function VideoSection() {
 
   return (
     <section
-      ref={videoSequenceTriggerRef}
-      id="video-section"
-      className="relative flex flex-col md:flex-row py-xl md:py-0 h-screen md:h-[867px] w-full items-start justify-start md:items-center md:justify-between"
+      className="relative h-full w-full"
     >
+      <div id="video-section" ref={videoSequenceTriggerRef} className="h-screen md:h-[867px] w-full flex flex-col md:flex-row py-xl md:py-0 items-start justify-start md:items-center md:justify-between">
       <div className="relative md:top-0 flex flex-col justify-center items-center md:items-start gap-xs px-lg md:px-2xl">
         <h2 className="font-graphie text-text-900 text-lg md:text-xl text-center md:text-start leading-[90%]">
           nueva tepago app
@@ -92,6 +92,7 @@ export default function VideoSection() {
           className="absolute top-1/2 left-1/2 h-[400px] md:h-[800px] w-auto -translate-x-[45%] -translate-y-[50%]"
           ref={canvasRef}
         />
+      </div>
       </div>
     </section>
   );
