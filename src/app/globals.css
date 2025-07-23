@@ -17,6 +17,7 @@
   --color-neutral-700: #414141; 
   --color-neutral-800: #2A2A2A;
   --color-neutral-900: #121212;
+
   --color-text-0: #FFFFFF;
   --color-text-50: #EEEEEE;
   --color-text-100: #E7E7E7;
@@ -28,6 +29,7 @@
   --color-text-700: #414141; 
   --color-text-800: #2A2A2A;
   --color-text-900: #121212;
+
   --color-primary-50: #EBFFF7;
   --color-primary-100: #C2FFE5;
   --color-primary-200: #99FFD5; 
@@ -38,6 +40,7 @@
   --color-primary-700: #00804A; 
   --color-primary-800: #005733;
   --color-primary-900: #00331E;
+
   --color-secondary-50: #E5F7FF;
   --color-secondary-100: #CCF0FF;
   --color-secondary-200: #99E1FF; 
@@ -48,6 +51,18 @@
   --color-secondary-700: #006B99; 
   --color-secondary-800: #004766;
   --color-secondary-900: #002433;
+  
+  --spacing-xs: 0.8rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 8rem;
+  --spacing-3xl: 10rem;
+
+  --text-xl: 4rem;
+  --text-lg: 2rem;
+
   --font-graphie: var(--font-graphie);
   --font-open-sans: var(--font-open-sans);   
 }
