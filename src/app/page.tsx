@@ -3,7 +3,7 @@ import ParallaxSection from "@/_components/_parallax-section/parallax-section";
 import Hero from "@/_components/_hero/hero";
 import gsap from "gsap";
 import { ScrollTrigger, SplitText} from "gsap/all"
-import AnimationSection from "@/_components/_animation-section/animation-section";
+import VideoSection from "@/_components/_video-section/video-section";
 
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -15,7 +15,7 @@ export default function Home() {
     <main className="flex flex-col gap-xl">
       <Hero />
       <ParallaxSection />
-      <AnimationSection />
+      <VideoSection />
     </main>
   );
 }
