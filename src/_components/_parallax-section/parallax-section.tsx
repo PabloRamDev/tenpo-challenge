@@ -22,7 +22,7 @@ const backgroundCardRef = useRef<cardRefElement>(null);
       const y = clientY - window.innerHeight / 2;
       foregroundCardRef?.current?.moveTo(x / 4, y / 4);
       midgroundCardRef?.current?.moveTo(x / 8, y / 8);
-      backgroundCardRef.current?.moveTo(x / 16, y / 16);
+      backgroundCardRef.current?.moveTo(x / 16, y / 12);
     };
 
     const onLeave = () => {
@@ -42,7 +42,7 @@ const backgroundCardRef = useRef<cardRefElement>(null);
 
 
   return (
-    <section id="parallax-section" className="relative py-xl px-md md:px-2xl flex flex-col md:flex-row mt-xl min-h-[870px] items-center justify-center md:justify-between bg-gradient-to-br from-neutral-900 to-primary-900 md:rounded-4xl">
+    <section id="parallax-section" className="relative py-2xl px-md md:px-2xl flex flex-col md:flex-row mt-xl min-h-[870px] items-center justify-start md:justify-between bg-gradient-to-br from-neutral-900 to-primary-900 md:rounded-4xl">
       <div className="relative left-0 flex flex-col items-start justify-start gap-md">
         <h2 className="font-graphie text-text-0 text-xl justify-center items-center leading-[90%]">
           Paga en todas partes,
@@ -56,7 +56,7 @@ const backgroundCardRef = useRef<cardRefElement>(null);
                  <CtaButton variant="secondary"> Comienza ya </CtaButton>
         </div>
       </div>
-      <div className="absolute right-0 bottom-40 flex h-1/2 w-[60%] md:w-1/2">
+<div className="absolute bottom-[-40px] left-1/2 transform -translate-x-1/2 md:bottom-40 md:left-[70%] md:transform-none md:right-0 h-1/2 w-screen md:w-full">
   <BackgroundCard ref={backgroundCardRef}/>
     <MidgroundCard ref={midgroundCardRef}/>
     <ForegroundCard ref={foregroundCardRef} />
