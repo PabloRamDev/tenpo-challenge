@@ -12,7 +12,7 @@ export default function Home() {
 
   
   return (
-    <main className="flex flex-col gap-xl">
+    <main className="flex flex-col gap-xl px-sm md:px-2xl">
       <Hero />
       <ParallaxSection />
       <VideoSection />

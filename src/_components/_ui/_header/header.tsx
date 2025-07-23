@@ -19,28 +19,29 @@ export default function Header() {
       scrub: 1
     }})
 
-       headerTween.to("header", 
-      {
-      backgroundColor: "#12121230",
-             backgroundFilter: "blur(10px)",
-
-    }
-    )
-    // headerTween.fromTo("header", {
-    //     backgroundColor: "#121212",
-    //     backgroundFilter: "blur(10px)",
-    //     duration: 1
-    //   },
+    //    headerTween.fromTo("header", 
     //   {
-    //   backgroundColor: "transparent"}
-    // )
+    //   backgroundColor: "#12121230",
+    //          backgroundFilter: "blur(10px)",
+
+    // }
+        headerTween.fromTo("header", {
+        backgroundColor: "#121212",
+        backgroundFilter: "blur(10px)",
+        duration: 1
+      },
+      {
+      backgroundColor: "transparent"}
+    )
+    
+
 
   },[])
 
   return (
-    <header className='flex sticky top-lg h-full bg-neutral-900 justify-between items-center rounded-full px-2xl py-lg z-10'>
+    <header className='flex sticky top-0 h-full max-h-[64px] md:max-h-[88px] bg-neutral-900 justify-between items-center px-xl md:px-3xl py-lg z-10'>
       <Logo width={80} height={40} />
-        <nav>
+        <nav className='hidden md:flex'>
             <ul className='flex items-center justify-center gap-8'>
              {navLinks.map(item => <li key={item.text}><NavLink isCta={item.isCta} text={item.text} /></li>)}   
             </ul>
