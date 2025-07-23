@@ -42,7 +42,7 @@ const backgroundCardRef = useRef<cardRefElement>(null);
 
 
   return (
-    <section id="parallax-section" className="relative flex mt-xl min-h-[870px] items-center justify-start bg-gradient-to-br from-primary-900 to-secondary-900 rounded-4xl px-md md:px-2xl">
+    <section id="parallax-section" className="relative py-xl px-md md:px-2xl flex flex-col md:flex-row mt-xl min-h-[870px] items-center justify-center md:justify-between bg-gradient-to-br from-neutral-900 to-primary-900 md:rounded-4xl">
       <div className="relative left-0 flex flex-col items-start justify-start gap-md">
         <h2 className="font-graphie text-text-0 text-xl justify-center items-center leading-[90%]">
           Paga en todas partes,
@@ -56,7 +56,7 @@ const backgroundCardRef = useRef<cardRefElement>(null);
                  <CtaButton variant="secondary"> Comienza ya </CtaButton>
         </div>
       </div>
-      <div className="absolute right-0 bottom-40 flex h-1/2 w-1/2">
+      <div className="absolute right-0 bottom-40 flex h-1/2 w-[60%] md:w-1/2">
   <BackgroundCard ref={backgroundCardRef}/>
     <MidgroundCard ref={midgroundCardRef}/>
     <ForegroundCard ref={foregroundCardRef} />

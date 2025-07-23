@@ -28,7 +28,7 @@ const ForegroundCard = forwardRef((_props, ref) => {
         alt="grend credit card in front"
         width={600}
         height={445}
-        className="absolute bottom-0 right-90 z-[3]"
+        className="absolute bottom-0 right-1/2 md:right-90 z-[3]"
       />
   );
 });

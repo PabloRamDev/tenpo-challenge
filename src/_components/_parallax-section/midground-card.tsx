@@ -28,7 +28,7 @@ const MidgroundCard = forwardRef((_props, ref) => {
         alt="teal credit card in middle"
         width={550}
         height={403}
-        className="absolute bottom-25 right-70 z-[2]"
+        className="absolute bottom-25 right-1/2 md:right-70 z-[2]"
       />
 
   );

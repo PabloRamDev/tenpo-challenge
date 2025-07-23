@@ -68,7 +68,7 @@ export default function VideoSection() {
   }, { scope: videoSequenceTriggerRef });
 
   return (
-        <section ref={videoSequenceTriggerRef} id="video-section" className="relative flex flex-col md:flex-row my-xl gap-md md:h-[867px] w-full items-start justify-start md:items-center md:justify-between">
+        <section ref={videoSequenceTriggerRef} id="video-section" className="relative flex flex-col md:flex-row my-xl md:h-[867px] w-full items-start justify-start md:items-center md:justify-between">
       <div className="relative md:top-0 flex flex-col justify-center gap-xs px-lg md:px-2xl">
         <h2 className="font-graphie text-lg md:text-xl justify-center items-center text-center">
           Prueba tepago app 📱
