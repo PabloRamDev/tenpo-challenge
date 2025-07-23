@@ -5,6 +5,8 @@ import NavLink from './nav-link'
 import Logo from '../logo'
 import gsap from "gsap"
 import { useGSAP } from '@gsap/react'
+import { IconButton } from '../_buttons/icon-button'
+import { Menu } from 'lucide-react'
 
 export default function Header() {
 
@@ -46,6 +48,7 @@ export default function Header() {
              {navLinks.map(item => <li key={item.text}><NavLink isCta={item.isCta} text={item.text} /></li>)}   
             </ul>
         </nav>
+        <IconButton className='xs:flex md:hidden' icon={Menu} />
     </header>
   )
 }
