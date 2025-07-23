@@ -107,7 +107,7 @@ export default function Hero() {
   return (
     <section
       id="hero-section"
-      className="relative py-xl flex md:my-xl h-screen md:h-[867px] w-full justify-start md:items-start md:justify-center"
+      className="relative py-xl flex md:my-xl h-screen w-full justify-start md:items-start md:justify-center"
     >
       <div
         id="circle-ref"
