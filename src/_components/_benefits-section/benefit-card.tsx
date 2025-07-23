@@ -11,7 +11,7 @@ type benefitCardProps = {
 export default function BenefitCard({title, image, description} : benefitCardProps) {
 
   return (
-<div className='relative flex flex-col w-full items-center justify-start gap-md md:gap-xl bg-primary-500 rounded-4xl p-lg md:py-xl aspect-square overflow-clip'>
+<div className='relative flex flex-col w-full items-center justify-start gap-md md:gap-xl bg-primary-400 rounded-4xl p-lg md:py-xl aspect-square overflow-clip'>
   <div className='flex flex-col gap-xs'>
     <h3 className='text-neutral-900 font-open-sans font-bold text-md md:text-lg text-center leading-[90%]'>
       {title}
