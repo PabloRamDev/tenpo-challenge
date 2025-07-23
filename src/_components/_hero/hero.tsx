@@ -141,7 +141,7 @@ export default function Hero() {
           <CtaButton> Pedir tarjeta </CtaButton>
         </div>
       </div>
-      <div id="hero-phone" className="hidden md:flex absolute top-0 left-0">
+      <div id="hero-phone" className="hidden md:flex absolute top-[10%] left-0">
         <Image
           src={"/images/hero-phone.png"}
           alt="Phone with tepago app"
@@ -152,7 +152,7 @@ export default function Hero() {
 
       <div
         id="hero-moneybag"
-        className="absolute top-[10%] md:top-0 right-[5%] w-[120px] md:w-auto"
+        className="absolute top-[10%] md:top-[25%] right-[5%] w-[120px] md:w-auto"
       >
         <Image
           src={"/images/moneybag.png"}
