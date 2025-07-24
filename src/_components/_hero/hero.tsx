@@ -109,13 +109,14 @@ export default function Hero() {
         id="circle-ref"
         className="absolute top-[25%] md:top-[-10%] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary-400 h-[1000px] md:h-[2000px] w-[1000px] md:w-[2000px] aspect-square  rounded-full -z-[1]"
       />
-      <div className="relative flex flex-col justify-start items-center md:justify-center h-auto gap-sm py-2xl md:top-3xl px-lg">
+      <div className="relative flex flex-col justify-start items-center md:justify-center h-auto gap-sm top-2xl md:top-0 px-lg">
         <div className="w-2/3 md:w-auto">
           <Image
             src={"/images/tepago-go-white.png"}
-            alt="Phone with tepago app"
+            alt="Hero logo"
             width={400}
             height={400}
+            className="w-[md:300px] 2xl-full"
           />
         </div>
         <div className="flex flex-col gap-sm">
@@ -138,39 +139,39 @@ export default function Hero() {
           <CtaButton> Pedir tarjeta </CtaButton>
         </div>
       </div>
-      <div id="hero-phone" className="hidden md:flex absolute top-[10%] left-0">
+      <div id="hero-phone" className="hidden md:flex absolute top-[10%] md:left-[-10%] 2xl:left-0 ">
         <Image
           src={"/images/hero-phone.png"}
           alt="Phone with tepago app"
           width={580}
           height={580}
-          className="md:w-[450px] lg:w-full"
+          className="w-[400px] 2xl:w-full"
         />
       </div>
 
       <div
         id="hero-moneybag"
-        className="absolute top-[3%] md:top-[15%] right-[5%]"
+        className="absolute top-[3%] md:top-[15%] right-0 2xl:right-[5%]"
       >
         <Image
           src={"/images/moneybag.png"}
           alt="moneybag 3d emoji"
           width={220}
           height={220}
-          className="w-[120px] md:w-[200px] lg:w-full"
+          className="w-[120px] md:w-[180px] 2xl:w-full"
         />
       </div>
 
       <div
         id="hero-pig"
-        className="absolute bottom-[25%] right-[50%] md:bottom-[40%] md:right-[10%]"
+        className="absolute bottom-[25%] right-[50%] md:right-[5%] md:bottom-[40%] 2xl:right-[10%]"
       >
         <Image
           src={"/images/pig.png"}
           alt="pig 3d emoji"
           width={400}
           height={400}
-          className="md:w-[320px] lg:w-full"
+          className="md:w-[320px] 2xl:w-full"
           
         />
       </div>
