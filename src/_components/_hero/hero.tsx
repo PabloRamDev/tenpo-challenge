@@ -122,7 +122,7 @@ export default function Hero() {
         <div className="flex flex-col gap-sm">
           <h1
             id="hero-h1"
-            className="font-open-sans text-lg md:text-xl text-center md:text-start leading-[100%]"
+            className="font-open-sans text-lg md:text-xl text-center leading-[100%]"
           >
             Tu cuenta, sin cuentos
           </h1>
