@@ -24,7 +24,7 @@ export const CtaButton = ({
   return (
     <button
       className={clsx(
-        "inline-flex items-center justify-center rounded-md md:p-2 transition-colors text-sm md:text-md px-2 py-3 md:px-sm md:py-sm min-w-[120px] md:min-w-[200px]",
+        "font-graphie inline-flex items-center justify-center rounded-md 2xl:p-2 transition-colors text-sm px-1 py-2 min-w-[120px] md:min-w-[200px]",
         variantClasses[variant],
         className
       )}
