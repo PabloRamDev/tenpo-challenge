@@ -20,13 +20,14 @@ const BackgroundCard = forwardRef((_props, ref) => {
   );
 
   return (
-    <div ref={el}   className="absolute left-1/2 bottom-40 transform -translate-x-1/2 z-[1] w-[300px] md:w-auto md:left-auto md:transform-none md:bottom-50 md:right-50">
+    <div ref={el}   className="absolute left-1/2 bottom-40 transform -translate-x-1/2 z-[1] w-[300px] md:w-auto md:left-auto md:transform-none md:bottom-50 md:right-[10%] 2xl:right-[20%]">
       <Image
         id="card-3"
         src={"/images/card3.png"}
         alt="green credit card in front"
         width={500}
         height={347}
+        className="w-[300px] 2xl:w-full"
       />
     </div>
   );

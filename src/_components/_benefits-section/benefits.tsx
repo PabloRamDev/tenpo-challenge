@@ -45,7 +45,7 @@ export default function Benefits() {
   }, "<");
   }, []);
   return (
-    <section id="benefits-section" className="relative flex flex-col min-h-screen h-full lg:max-h-[867px] w-full items-center md:justify-start md:items-center gap-xl px-lg md:px-2xl">
+    <section id="benefits-section" className="relative flex flex-col h-screen 2xl:max-h-[867px] w-full items-center md:justify-start md:items-center gap-xl px-lg md:px-2xl">
         <div className="flex flex-col justify-center gap-md">
       <h2 id="benefits-title" className="font-graphie text-lg md:text-xl text-center leading-[100%]">
         Conoce los beneficios de tepago

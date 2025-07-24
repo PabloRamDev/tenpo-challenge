@@ -20,13 +20,14 @@ const MidgroundCard = forwardRef((_props, ref) => {
   );
 
   return (
-    <div ref={el}   className="absolute bottom-20 left-1/2 transform -translate-x-1/2 z-[2] w-[350px] md:w-auto md:bottom-25 md:left-auto md:transform-none md:right-70">
+    <div ref={el}   className="absolute bottom-20 left-1/2 transform -translate-x-1/2 z-[2] w-[350px] md:w-auto md:bottom-25 md:left-auto md:transform-none md:right-[15%] 2xl:right-[25%]">
       <Image
         id="card-2"
         src={"/images/card2.png"}
         alt="teal credit card in middle"
         width={550}
         height={403}
+        className="w-[350px] 2xl:w-full"
       />
     </div>
   );
