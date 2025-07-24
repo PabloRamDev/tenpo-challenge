@@ -82,7 +82,7 @@ export default function VideoSection() {
       <div
         id="video-section"
         ref={videoSequenceTriggerRef}
-        className="relative h-1/2 top-[64px] md:h-[867px] w-full flex flex-col md:flex-row md:py-0 items-start justify-start md:items-center gap-lg"
+        className="relative h-1/2 top-[5%] md:top-0 md:h-[867px] w-full flex flex-col md:flex-row md:py-0 items-start justify-start md:items-center gap-lg"
       >
         <div className="relative top-[2%] md:top-0 flex flex-col h-auto justify-start items-center md:items-start gap-xs px-lg md:px-2xl pt-2xl-">
           <h2 className="font-graphie text-text-900 text-lg md:text-xl text-center md:text-start leading-[90%]">
