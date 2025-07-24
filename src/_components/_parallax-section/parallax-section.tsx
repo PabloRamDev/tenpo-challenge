@@ -69,7 +69,7 @@ export default function ParallaxSection() {
           <CtaButton variant="secondary"> Comienza ya </CtaButton>
         </div>
       </div>
-      <div className="absolute bottom-[-40px] left-1/2 transform -translate-x-1/2 md:bottom-40 md:left-[70%] md:transform-none md:right-0 h-1/2 w-screen md:w-full">
+      <div className="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 md:bottom-40 md:left-[70%] md:transform-none md:right-0 h-1/2 w-screen md:w-full">
         <BackgroundCard ref={backgroundCardRef} />
         <MidgroundCard ref={midgroundCardRef} />
         <ForegroundCard ref={foregroundCardRef} />
