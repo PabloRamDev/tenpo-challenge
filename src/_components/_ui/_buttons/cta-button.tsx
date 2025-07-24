@@ -11,7 +11,7 @@ const variantClasses = {
   default:
     "bg-neutral-900 hover:bg-neutral-800 transition-duration-2 text-text-0",
   secondary:
-    "bg-neutral-0 hover:bg-neutral-800 transition-duration-2 text-text-900",
+    "bg-neutral-100 hover:bg-neutral-50 transition-duration-2 text-text-900",
   primary: "bg-primary-400 hover:bg-primary-300 text-text-0 "
 };
 

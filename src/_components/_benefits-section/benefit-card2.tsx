@@ -52,7 +52,7 @@ useImperativeHandle(
         <p className="w-full text-center">{description}</p>
       </div>
 
-      <div className="absolute bottom-[-25%] md:bottom-[-15%] w-[250px] md:w-[250px] h-auto">
+      <div className="absolute bottom-[-10%] md:bottom-[-15%] w-[180px] md:w-[250px] h-auto">
         <Image
           id={id}
           src={image}

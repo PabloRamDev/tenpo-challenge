@@ -3,7 +3,6 @@ import React, { useRef } from "react";
 import { iphoneimages } from "@/_lib/image-sequence";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { CtaButton } from "../_ui/_buttons/cta-button";
 import NextImage from "next/image";
 
 export default function VideoSection() {
@@ -87,7 +86,7 @@ export default function VideoSection() {
       >
         <div className="relative top-[2%] md:top-0 flex flex-col h-auto justify-start items-center md:items-start gap-xs px-lg md:px-2xl pt-2xl-">
           <h2 className="font-graphie text-text-900 text-lg md:text-xl text-center md:text-start leading-[90%]">
-            nueva tepago app
+            Descarga tepago app
           </h2>
           <p className="text-center md:text-start">
             Lleva tepago contigo a todos lados: administra tu cuenta. La

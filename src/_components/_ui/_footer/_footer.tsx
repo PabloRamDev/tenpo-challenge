@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="flex items-start justify-between bg-neutral-900 p-lg md:px-2xl ">
       <div className="flex flex-col md:flex-row justify-between items-center w-full gap-2">
-        <div className="flex flex-col">
+        <div className="flex flex-col items-center md:items-start">
           <Logo width={80} height={20} />
           <p className="flex gap-2 text-text-0 font-open-sans font-bold">
             {" "}
