@@ -17,7 +17,7 @@ export default function Benefits() {
       const tl = gsap.timeline({
     scrollTrigger: {
       trigger: "#benefits-section",
-      start: "top 80%",
+      start: "top 70%",
       toggleActions: "restart none none none",
     },
   });
@@ -45,7 +45,7 @@ export default function Benefits() {
   }, "<");
   }, []);
   return (
-    <section id="benefits-section" className="relative flex flex-col h-screen 2xl:max-h-[867px] w-full items-center md:justify-start md:items-center gap-xl px-lg md:px-2xl">
+    <section id="benefits-section" className="relative flex flex-col h-full my-2xl 2xl:max-h-[867px] w-full items-center md:justify-start md:items-center gap-xl px-lg md:px-2xl">
         <div className="flex flex-col justify-center gap-md">
       <h2 id="benefits-title" className="font-graphie text-lg md:text-xl text-center leading-[100%]">
         Conoce los beneficios de tepago

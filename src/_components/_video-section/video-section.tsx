@@ -78,13 +78,13 @@ export default function VideoSection() {
   );
 
   return (
-    <section className="relative h-full w-full min-h-screen">
+    <section className="relative h-full w-full">
       <div
         id="video-section"
         ref={videoSequenceTriggerRef}
         className="relative h-1/2 top-[5%] md:top-0 md:h-[867px] w-full flex flex-col md:flex-row md:py-0 items-start justify-start md:items-center gap-lg"
       >
-        <div className="relative top-[2%] md:top-0 flex flex-col h-auto justify-start items-center md:items-start gap-xs px-lg md:px-2xl pt-2xl-">
+        <div className="relative mt-xl md:top-0 flex flex-col justify-start items-center md:items-start gap-xs px-lg 2xl:px-2xl">
           <h2 className="font-graphie text-text-900 text-lg md:text-xl text-center md:text-start leading-[90%]">
             Descarga tepago app
           </h2>
@@ -92,13 +92,13 @@ export default function VideoSection() {
             Lleva tepago contigo a todos lados: administra tu cuenta. La
             libertad financiera nunca fue tan fácil 💸.
           </p>
-          <NextImage src={"/images/app-stores.png"} alt="app stores logo" width={400} height={200} className="cursor-pointer" />
+          <NextImage src={"/images/app-stores.png"} alt="app stores logo" width={300} height={200} className="cursor-pointer" />
           
         </div>
 
-        <div className="relative top-0 transform  md:translate-x-none bg-primary-400 rounded-full md:right-0 justify-self-end h-auto w-[100%] md:w-auto md:h-full md:bg-radial aspect-square ">
+        <div className="relative top-[5%] transform  md:translate-x-none bg-primary-400 rounded-full md:right-0 justify-self-end h-auto w-[100%] 2xl:w-auto 2xl:h-full md:bg-radial aspect-square ">
           <canvas
-            className="absolute top-1/2 left-1/2 h-[450px] md:h-[800px] w-auto -translate-x-[45%] -translate-y-[55%]"
+            className="absolute top-1/2 left-1/2 h-[450px] md:h-screen w-auto -translate-x-[45%] -translate-y-[55%]"
             ref={canvasRef}
           />
         </div>
