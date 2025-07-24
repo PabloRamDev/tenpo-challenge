@@ -80,7 +80,7 @@ Construida con tecnologías modernas, enfocada en buenas prácticas, rendimiento
 Para correr el proyecto en tu entorno local, sigue estos pasos:
 
 ```bash
-git clone https://github.com/tu-usuario/tepago.git
+git clone https://github.com/PabloRamDev/tenpo-challenge.git
 cd tepago
 npm install
 npm run dev
