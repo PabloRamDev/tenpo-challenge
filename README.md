@@ -1,24 +1,63 @@
-# Tepago – Tempo Challenge  
-_Desarrollado por [pabloram.dev](https://github.com/pabloramdev)_
+# Tepago  
+## _Tenpo Challenge – por [pabloram.dev](https://github.com/pabloramdev)_
 
-Este proyecto es una aplicación construida con [Next.js](https://nextjs.org)
-para el proceso de postulación a Tenpo.
+[![Next.js](https://img.shields.io/badge/Next.js-13+-black?logo=next.js)](https://nextjs.org/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.0-blue?logo=tailwindcss)](https://tailwindcss.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-4.x-blue?logo=typescript)](https://www.typescriptlang.org/)
 
-## 🛠️ Instrucciones para ejecutar en modo desarrollo
+**Tepago** es una aplicación desarrollada como parte del proceso técnico de **Tenpo**.  
+Construida con tecnologías modernas, enfocada en buenas prácticas, rendimiento y animaciones fluidas.
 
-Sigue estos pasos para iniciar la app en tu entorno local:
+---
 
-1. Clona este repositorio:
+## ✨ Características
 
-   ```bash
-   git clone https://github.com/tu-usuario/tepago.git
-   cd tepago```
+- ⚡ Framework: Next.js 14+ (App Router)
+- 🎨 Estilos con TailwindCSS
+- 📦 Escrito con TypeScript
+- 🎞️ Animaciones fluidas usando GSAP
+- 🎨 Prototipo basado en mockups de Figma
 
-2. Instalar dependencias 
+---
+
+## 🚀 Tecnologías utilizadas
+
+- [Next.js](https://nextjs.org)
+- [React](https://react.dev)
+- [TypeScript](https://www.typescriptlang.org)
+- [TailwindCSS](https://tailwindcss.com)
+- [GSAP](https://gsap.com)
+- [Figma](https://www.figma.com)
+
+---
+
+## 🧪 Requisitos
+
+- Node.js v18+
+- npm, yarn, pnpm o bun
+
+---
+
+## 🛠 Instalación y ejecución
+
+Para correr el proyecto en tu entorno local, sigue estos pasos:
 
 ```bash
+git clone https://github.com/tu-usuario/tepago.git
+cd tepago
 npm install
+npm run dev
 ```
 
-3. Abrir (http://localhost:3000)
+Abre tu navegador en (http://localhost:3000) y explora la aplicación.
+
+## 📁 Estructura principal
+- /app             # Rutas y componentes con App Router
+- /_components     # Componentes reutilizables y de sección
+- /_lib            # Helpers y datos
+- /public          # Recursos estáticos
+
+## 🙌 Agradecimientos
+Se agradece la oportunidad de participar en el proceso de selección.
+Este proyecto fue desarrollado con dedicación, mucho esfuerzo y valioso tiempo.
 
