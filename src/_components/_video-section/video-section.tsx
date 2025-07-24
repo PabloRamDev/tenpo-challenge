@@ -4,6 +4,7 @@ import { iphoneimages } from "@/_lib/image-sequence";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { CtaButton } from "../_ui/_buttons/cta-button";
+import NextImage from "next/image";
 
 export default function VideoSection() {
   const videoSequenceTriggerRef = useRef<HTMLDivElement>(null);
@@ -92,8 +93,8 @@ export default function VideoSection() {
             Lleva tepago contigo a todos lados: administra tu cuenta. La
             libertad financiera nunca fue tan fácil 💸.
           </p>
-
-          <CtaButton>Descargar</CtaButton>
+          <NextImage src={"/images/app-stores.png"} alt="app stores logo" width={400} height={200} className="cursor-pointer" />
+          
         </div>
 
         <div className="relative top-0 transform  md:translate-x-none bg-primary-400 rounded-full md:right-0 justify-self-end h-auto w-[100%] md:w-auto md:h-full md:bg-radial aspect-square ">
