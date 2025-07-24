@@ -4,12 +4,8 @@ import React from "react";
 import { CtaButton } from "../_ui/_buttons/cta-button";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { useMediaQuery } from "react-responsive";
 
 export default function Hero() {
-  // const timeline = gsap.timeline();
-  const isMobile = useMediaQuery({ maxWidth: 767 });
-
   useGSAP(() => {
     const tl = gsap.timeline();
 
@@ -75,7 +71,6 @@ export default function Hero() {
       y: "-100%",
       scale: 0,
       ease: "power0.inOut",
-
     });
 
     heroTween.to(
@@ -131,7 +126,8 @@ export default function Hero() {
             Tu cuenta, sin cuentos
           </h1>
           <p id="hero-p" className="text-center md:text-start">
-            Compra, paga, ahorra y envía dinero sin cobros. Todo rápido y seguro.
+            Compra, paga, ahorra y envía dinero sin cobros. Todo rápido y
+            seguro.
           </p>
         </div>
         <div

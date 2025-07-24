@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { iphoneimages } from "@/_lib/image-sequence";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -33,7 +33,7 @@ export default function VideoSection() {
         img.onload = () => {
           imagesLoaded++;
           if (imagesLoaded === frameCount) {
-            initScrollTrigger(); // Start animation only after all images are loaded
+            initScrollTrigger();
             updateImage();
           }
         };
@@ -44,7 +44,12 @@ export default function VideoSection() {
       }
 
       function updateImage() {
-        context?.clearRect(0, 0, canvas.width, canvas.height);
+        context?.clearRect(
+          0,
+          0,
+          canvas?.width as number,
+          canvas?.height as number
+        );
         context?.drawImage(images[iphone.frame], 0, 0);
       }
 
@@ -64,39 +69,40 @@ export default function VideoSection() {
           onUpdate: updateImage,
         });
 
-        gsap.to("#circle2" , {
+        gsap.to("#circle2", {
           x: "200%",
-        })
+        });
       }
     },
     { scope: videoSequenceTriggerRef }
   );
 
   return (
-    <section
-      className="relative h-full w-full min-h-screen"
-    >
-      <div id="video-section" ref={videoSequenceTriggerRef} className="relative h-1/2 md:h-[867px] w-full flex flex-col md:flex-row md:py-0 items-start justify-start md:items-center gap-lg">
-      <div className="relative top-[2%] md:top-0 flex flex-col h-auto justify-start items-center md:items-start gap-xs px-lg md:px-2xl pt-2xl-">
-        <h2 className="font-graphie text-text-900 text-lg md:text-xl text-center md:text-start leading-[90%]">
-          nueva tepago app
-        </h2>
-        <p className="text-center md:text-start">
-          Lleva tepago contigo a todos lados: administra tu cuenta. 
-          La libertad financiera nunca fue tan fácil 💸.
-        </p>
+    <section className="relative h-full w-full min-h-screen">
+      <div
+        id="video-section"
+        ref={videoSequenceTriggerRef}
+        className="relative h-1/2 md:h-[867px] w-full flex flex-col md:flex-row md:py-0 items-start justify-start md:items-center gap-lg"
+      >
+        <div className="relative top-[2%] md:top-0 flex flex-col h-auto justify-start items-center md:items-start gap-xs px-lg md:px-2xl pt-2xl-">
+          <h2 className="font-graphie text-text-900 text-lg md:text-xl text-center md:text-start leading-[90%]">
+            nueva tepago app
+          </h2>
+          <p className="text-center md:text-start">
+            Lleva tepago contigo a todos lados: administra tu cuenta. La
+            libertad financiera nunca fue tan fácil 💸.
+          </p>
 
-        <CtaButton>Descargar</CtaButton>
-      </div>
+          <CtaButton>Descargar</CtaButton>
+        </div>
 
-      <div className="relative top-0 transform  md:translate-x-none bg-primary-400 rounded-full md:right-0 justify-self-end h-auto w-[100%] md:w-auto md:h-full md:bg-radial aspect-square ">
-        <canvas
-          className="absolute top-1/2 left-1/2 h-[500px] md:h-[1000px] w-auto -translate-x-[45%] -translate-y-[55%]"
-          ref={canvasRef}
-        />
+        <div className="relative top-0 transform  md:translate-x-none bg-primary-400 rounded-full md:right-0 justify-self-end h-auto w-[100%] md:w-auto md:h-full md:bg-radial aspect-square ">
+          <canvas
+            className="absolute top-1/2 left-1/2 h-[500px] md:h-[1000px] w-auto -translate-x-[45%] -translate-y-[55%]"
+            ref={canvasRef}
+          />
+        </div>
       </div>
-      </div>
-           
     </section>
   );
 }
