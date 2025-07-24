@@ -85,7 +85,7 @@ export default function VideoSection() {
         className="relative h-1/2 top-[5%] md:top-0 md:h-[867px] w-full flex flex-col md:flex-row md:py-0 items-start justify-start md:items-center gap-lg"
       >
         <div className="relative mt-xl md:top-0 flex flex-col justify-start items-center md:items-start gap-xs px-lg 2xl:px-2xl">
-          <h2 className="font-graphie text-text-900 text-lg md:text-xl text-center md:text-start leading-[90%]">
+          <h2 className="font-graphie text-lg md:text-xl text-center md:text-start leading-[90%]">
             Descarga tepago app
           </h2>
           <p className="text-center md:text-start">

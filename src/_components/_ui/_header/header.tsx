@@ -9,7 +9,7 @@ import { Menu } from 'lucide-react'
 export default function Header() {
 
   return (
-    <header className='flex sticky top-0 h-full max-h-[64px] bg-neutral-900 justify-between items-center px-lg md:px-2xl py-lg z-10'>
+    <header className='flex h-full max-h-[64px] bg-neutral-900 justify-between items-center px-lg md:px-2xl py-lg z-10'>
       <Logo width={80} height={40} />
         <nav className='hidden md:flex'>
             <ul className='flex items-center justify-center gap-8'>

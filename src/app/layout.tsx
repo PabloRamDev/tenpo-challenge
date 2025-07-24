@@ -48,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="es-Cl">
       <body
-        className={`flex flex-col ${openSans.variable} ${graphie.variable} antialiased bg-neutral-0 min-h-screen max-w-screen overflow-x-hidden`}
+        className={`flex flex-col ${openSans.variable} ${graphie.variable} antialiased min-h-screen max-w-screen overflow-x-hidden`}
       >
         <Header />
         {children}
