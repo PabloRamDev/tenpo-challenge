@@ -144,31 +144,34 @@ export default function Hero() {
           alt="Phone with tepago app"
           width={580}
           height={580}
+          className="md:w-[450px] lg:w-full"
         />
       </div>
 
       <div
         id="hero-moneybag"
-        className="absolute top-[3%] md:top-[15%] right-[5%] w-[120px] md:w-auto"
+        className="absolute top-[3%] md:top-[15%] right-[5%]"
       >
         <Image
           src={"/images/moneybag.png"}
           alt="moneybag 3d emoji"
           width={220}
           height={220}
-          sizes="(max-width: 768px) 100px, (max-width: 1200px) 250px, 250px"
+          className="w-[120px] md:w-[200px] lg:w-full"
         />
       </div>
 
       <div
         id="hero-pig"
-        className="absolute bottom-[25%] right-[50%] md:bottom-[40%] md:right-[10%] w-[200px] md:w-auto"
+        className="absolute bottom-[25%] right-[50%] md:bottom-[40%] md:right-[10%]"
       >
         <Image
           src={"/images/pig.png"}
           alt="pig 3d emoji"
           width={400}
           height={400}
+          className="md:w-[320px] lg:w-full"
+          
         />
       </div>
     </section>
