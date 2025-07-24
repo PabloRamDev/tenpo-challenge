@@ -1,22 +1,65 @@
 import { benefitCardData } from "@/_lib/benefit-cards";
-import React from "react";
-import BenefitCard from "./benefit-card";
+import React, { useRef } from "react";
+import BenefitCard, { BenefitCardRef } from "./benefit-card2";
+import { useGSAP } from "@gsap/react";
+import SplitText from "gsap/SplitText";
+import gsap from "gsap";
 
 export default function Benefits() {
+
+    const cardRefs = useRef<(BenefitCardRef | null)[]>([]);
+
+      useGSAP(() => {
+          const elements = cardRefs.current.map((ref) => ref?.el).filter(Boolean);
+    const headlineSplit = new SplitText("#benefits-title", { type: "chars, words" });
+    const paragraphSplit = new SplitText("#benefits-p", { type: "chars, lines" });
+
+      const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#benefits-section",
+      start: "top 60%",
+      toggleActions: "restart none none none",
+    },
+  });
+
+  tl.from(headlineSplit.chars, {
+    yPercent: 100,
+    duration: 0.5,
+    stagger: 0.05,
+    ease: "expo.out",
+  }, "<");
+
+  tl.from(paragraphSplit.lines, {
+    opacity: 0,
+    yPercent: 100,
+    duration: 0.5,
+    stagger: 0.05,
+  }, "<");
+
+  tl.from(elements, {
+    scale: 0.8,
+    y: 50,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power3.out",
+  }, "<");
+  }, []);
   return (
-    <section className="relative flex flex-col min-h-screen h-full md:h-[867px] w-full items-center md:justify-start md:items-center gap-xl px-lg md:px-2xl">
+    <section id="benefits-section" className="relative flex flex-col min-h-screen h-full md:h-[867px] w-full items-center md:justify-start md:items-center gap-xl px-lg md:px-2xl">
         <div className="flex flex-col justify-center gap-md">
-      <h2 className="font-graphie text-lg md:text-xl text-center md:text-start leading-[100%]">
+      <h2 id="benefits-title" className="font-graphie text-lg md:text-xl text-center md:text-start leading-[100%]">
         Conoce los beneficios de tepago
       </h2>
-      <p className="text-center md:text-start">
+      <p id="benefits-p" className="text-center md:text-start">
         Tepago te entrega un sin fin de motivos para cambiarte: conoce nuestros
         beneficios acá: 👇
       </p>
       </div>
       <div className="flex flex-col gap-lg md:flex-row w-full">
       {
-        benefitCardData.map(item => <BenefitCard key={item.id} title={item.title} image={item.image} description={item.description}/>)
+        benefitCardData.map((item, index) => <BenefitCard ref={(el) => {
+      cardRefs.current[index] = el;
+    }} key={item.id} id={item.id} title={item.title} image={item.image} description={item.description}/>)
       }
       </div>
     </section>
