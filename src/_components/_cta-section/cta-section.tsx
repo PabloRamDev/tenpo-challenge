@@ -15,7 +15,7 @@ export default function CtaSection() {
     scrollTrigger: {
       trigger: "#cta-section",
       start: "top 60%",
-      toggleActions: "play none none none",
+      toggleActions: "restart none none none",
     },
   });
 

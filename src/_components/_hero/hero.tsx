@@ -67,7 +67,6 @@ export default function Hero() {
         trigger: "#hero-section",
         start: "top top",
         end: "bottom center",
-        markers: true,
         scrub: 1,
       },
     });
