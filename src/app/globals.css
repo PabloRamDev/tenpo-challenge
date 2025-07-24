@@ -72,10 +72,10 @@
   --translate-center: transform: {translate(-50%, -50%)};
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --background: var(--color-neutral-900);
-    --foreground: var(--color-neutral-0);
+    --background: var(--color-neutral-0);
+    --foreground: var(--color-neutral-900);
   }
 }
 

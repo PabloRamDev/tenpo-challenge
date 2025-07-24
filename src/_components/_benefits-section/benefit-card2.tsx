@@ -43,7 +43,7 @@ useImperativeHandle(
   return (
     <div
       ref={el}
-      className="relative flex flex-col w-full items-center justify-start gap-md md:gap-xl bg-primary-400 rounded-4xl p-lg md:py-xl aspect-square overflow-clip"
+      className="relative flex flex-col w-full items-center justify-start gap-md md:gap-xl bg-primary-400 rounded-xl p-lg md:py-xl aspect-square overflow-clip"
     >
       <div className="flex flex-col gap-xs">
         <h3 className="font-graphie text-lg 2xl:text-xl text-center leading-[90%]">
