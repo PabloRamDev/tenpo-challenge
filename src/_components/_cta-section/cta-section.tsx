@@ -37,7 +37,7 @@ export default function CtaSection() {
   return (
     <section
       id="cta-section"
-      className="relative px-md md:px-2xl flex flex-col md:flex-row mt-xl h-screen md:h-[867px] items-center justify-center bg-gradient-to-br from-neutral-900 to-primary-900 md:rounded-4xl overflow-hidden"
+      className="relative px-md md:px-2xl flex flex-col md:flex-row mt-xl h-screen items-center justify-center bg-gradient-to-br from-neutral-900 to-primary-900 md:rounded-4xl overflow-hidden"
     >
       <Image
         src="/images/cta-image.jpeg"
@@ -50,13 +50,13 @@ export default function CtaSection() {
       <div className="relative left-0 flex flex-col items-center justify-center gap-md">
         <h2
           id="cta-title"
-          className="font-graphie text-text-0 text-lg md:text-xl text-center leading-[90%]"
+          className="font-graphie text-text-0 text-lg 2xl:text-xl text-center leading-[90%]"
         >
           Siempre hay espacio para alguien más 🥰
         </h2>
         <p
           id="cta-p"
-          className="font-open-sans text-center text-md  text-text-0 w-full md:w-3/2"
+          className="font-open-sans text-center  text-text-0 w-full md:w-3/2"
         >
           Somos miles de usuarios manejando nuestro dinero con tepago. <br/>
           Únete a quienes verdaderamente saben de plata
