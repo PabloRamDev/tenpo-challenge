@@ -64,6 +64,7 @@
   --text-xl: 3rem;
   --text-lg: 2rem;
   --text-md: 1.2rem;
+  --text-sm: 1.0rem;
 
   --font-graphie: var(--font-graphie);
   --font-open-sans: var(--font-open-sans);  

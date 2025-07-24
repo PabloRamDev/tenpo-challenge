@@ -3,7 +3,7 @@ import clsx from "clsx";
 import { ReactNode } from "react";
 
 interface CtaButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "default" | "secondary";
+  variant?: "default" | "secondary" | "primary";
   className?: string;
   children: ReactNode;
 }
@@ -13,6 +13,7 @@ const variantClasses = {
     "bg-neutral-900 hover:bg-neutral-800 transition-duration-2 text-text-0",
   secondary:
     "bg-neutral-0 hover:bg-neutral-800 transition-duration-2 text-text-900",
+  primary: "bg-primary-400 hover:bg-primary-300 text-text-0 "
 };
 
 export const CtaButton = ({
