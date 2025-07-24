@@ -29,6 +29,7 @@ const graphie = localFont({
 export const metadata: Metadata = {
   title: "Tepago - Tenpo Challenge",
   description: "Diseñado y desarrollado por Pabloram.dev",
+  themeColor: '#121212', 
 };
 
 export default function RootLayout({
