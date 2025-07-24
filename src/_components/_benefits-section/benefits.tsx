@@ -17,13 +17,13 @@ export default function Benefits() {
       const tl = gsap.timeline({
     scrollTrigger: {
       trigger: "#benefits-section",
-      start: "top 60%",
+      start: "top 80%",
       toggleActions: "restart none none none",
     },
   });
 
   tl.from(headlineSplit.chars, {
-    yPercent: 100,
+    opacity: 100,
     duration: 0.5,
     stagger: 0.05,
     ease: "expo.out",

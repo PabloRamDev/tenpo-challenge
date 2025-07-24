@@ -1,22 +1,22 @@
 export const navLinks = [
     {
-        text:"Persona",
-        isCta:"false",
-    },
-        {
-        text:"Seguros",
-        isCta:"false",
-    },
-        {
         text:"Beneficios",
         isCta:"false",
+        href: "#benefits-section"
+    },
+        {
+        text:"Tarjetas",
+        isCta:"false",
+        href: "#parallax-section"
+    },
+        {
+        text:"App",
+        isCta:"false",
+        href: "#video-section"
     },
         {
         text:"Hazte cliente",
         isCta:"true",
-    },
-     {
-        text:"Ayuda",
-        isCta:"false",
+        href: "#cta-section"
     }
 ]

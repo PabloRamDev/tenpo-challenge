@@ -77,14 +77,13 @@ export default function VideoSection() {
       className="relative h-full w-full min-h-screen"
     >
       <div id="video-section" ref={videoSequenceTriggerRef} className="relative h-1/2 md:h-[867px] w-full flex flex-col md:flex-row md:py-0 items-start justify-start md:items-center gap-lg">
-      <div className="relative md:top-0 flex flex-col h-auto justify-start items-center md:items-start gap-xs px-lg md:px-2xl pt-2xl-">
+      <div className="relative top-[2%] md:top-0 flex flex-col h-auto justify-start items-center md:items-start gap-xs px-lg md:px-2xl pt-2xl-">
         <h2 className="font-graphie text-text-900 text-lg md:text-xl text-center md:text-start leading-[90%]">
           nueva tepago app
         </h2>
         <p className="text-center md:text-start">
-          Lleva tepago contigo a todos lados: administra tu cuenta, realiza
-          pagos y transferencias en una sola aplicación. La libertad financiera
-          nunca fue tan fácil 💸.
+          Lleva tepago contigo a todos lados: administra tu cuenta. 
+          La libertad financiera nunca fue tan fácil 💸.
         </p>
 
         <CtaButton>Descargar</CtaButton>

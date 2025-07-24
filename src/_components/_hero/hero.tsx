@@ -109,7 +109,7 @@ export default function Hero() {
   return (
     <section
       id="hero-section"
-      className="relative py-xl flex md:my-xl h-screen w-full justify-start md:items-start md:justify-center"
+      className="relative flex md:my-xl h-screen w-full justify-start md:items-start md:justify-center"
     >
       <div
         id="circle-ref"
@@ -154,7 +154,7 @@ export default function Hero() {
 
       <div
         id="hero-moneybag"
-        className="absolute top-[5%] md:top-[15%] right-[5%] w-[120px] md:w-auto"
+        className="absolute top-[3%] md:top-[15%] right-[5%] w-[120px] md:w-auto"
       >
         <Image
           src={"/images/moneybag.png"}
@@ -167,7 +167,7 @@ export default function Hero() {
 
       <div
         id="hero-pig"
-        className="absolute bottom-[30%] right-[40%] md:bottom-[40%] md:right-[10%] w-[250px] md:w-auto"
+        className="absolute bottom-[25%] right-[50%] md:bottom-[40%] md:right-[10%] w-[200px] md:w-auto"
       >
         <Image
           src={"/images/pig.png"}

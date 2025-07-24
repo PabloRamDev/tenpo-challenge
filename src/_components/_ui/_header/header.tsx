@@ -45,7 +45,7 @@ export default function Header() {
       <Logo width={80} height={40} />
         <nav className='hidden md:flex'>
             <ul className='flex items-center justify-center gap-8'>
-             {navLinks.map(item => <li key={item.text}><NavLink isCta={item.isCta} text={item.text} /></li>)}   
+             {navLinks.map(item => <li key={item.text}><NavLink href={item.href} isCta={item.isCta} text={item.text} /></li>)}   
             </ul>
         </nav>
         <IconButton className='xs:flex md:hidden' icon={Menu} />
