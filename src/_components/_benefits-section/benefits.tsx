@@ -47,10 +47,10 @@ export default function Benefits() {
   return (
     <section id="benefits-section" className="relative flex flex-col min-h-screen h-full lg:max-h-[867px] w-full items-center md:justify-start md:items-center gap-xl px-lg md:px-2xl">
         <div className="flex flex-col justify-center gap-md">
-      <h2 id="benefits-title" className="font-graphie text-lg md:text-xl text-center md:text-start leading-[100%]">
+      <h2 id="benefits-title" className="font-graphie text-lg md:text-xl text-center leading-[100%]">
         Conoce los beneficios de tepago
       </h2>
-      <p id="benefits-p" className="text-center md:text-start">
+      <p id="benefits-p" className="text-center">
         Tepago te entrega un sin fin de motivos para cambiarte: conoce nuestros
         beneficios acá: 👇
       </p>
