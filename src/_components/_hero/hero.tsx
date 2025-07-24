@@ -109,14 +109,14 @@ export default function Hero() {
         id="circle-ref"
         className="absolute top-[25%] md:top-[-10%] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary-400 h-[1000px] md:h-[2000px] w-[1000px] md:w-[2000px] aspect-square  rounded-full -z-[1]"
       />
-      <div className="relative flex flex-col justify-start items-center md:justify-center h-auto gap-sm top-2xl md:top-0 px-lg">
+      <div className="relative flex flex-col justify-start items-center md:justify-center h-auto gap-sm top-2xl px-lg">
         <div className="w-2/3 md:w-auto">
           <Image
             src={"/images/tepago-go-white.png"}
             alt="Hero logo"
             width={400}
             height={400}
-            className="w-[md:300px] 2xl-full"
+            className="w-[md:300px] 2xl-w-full"
           />
         </div>
         <div className="flex flex-col gap-sm">
@@ -139,13 +139,13 @@ export default function Hero() {
           <CtaButton> Pedir tarjeta </CtaButton>
         </div>
       </div>
-      <div id="hero-phone" className="hidden md:flex absolute top-[10%] md:left-[-10%] 2xl:left-0 ">
+      <div id="hero-phone" className="hidden md:flex absolute top-[10%] md:left-0 2xl:left-0 ">
         <Image
           src={"/images/hero-phone.png"}
           alt="Phone with tepago app"
-          width={580}
+          width={600}
           height={580}
-          className="w-[400px] 2xl:w-full"
+          className="w-[400px] 2xl:w-[600px]"
         />
       </div>
 
