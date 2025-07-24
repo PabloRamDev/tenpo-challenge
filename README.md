@@ -20,6 +20,38 @@ Construida con tecnologías modernas, enfocada en buenas prácticas, rendimiento
 
 ---
 
+## ✨ Especificaciones diseño
+### Sección hero:
+<img width="1800" height="957" alt="imagen" src="https://github.com/user-attachments/assets/7a8413c6-e30c-44d7-9151-cdd8ef706727" />
+
+ - Animación al cargar
+ - Animación de salida ScrollTrigger
+ - Effecto parallax con distintos planos entre los objetos
+
+### Sección Beneficios
+
+ - Animación automática en ScrollTrigger
+ - Animación de texto
+ - Animación tarjetas
+
+### Sección Tarjetas
+
+ - Efecto Parallax sobre tarjetas movimiento cursor
+   
+### Sección App
+
+- Animación ScrollTrigger modelo 3D
+- Mockup 3D hecho y animado en Blender
+- Cargado frame a frame con ScrollTrigger y Gsap
+- Animación fijada a pantalla con Gsap Pin
+
+### Sección CTA
+
+- Animación de texto con scrollTrigger
+- Animación hecha con SplitText de gsap
+  
+---
+
 ## 🚀 Tecnologías utilizadas
 
 - [Next.js](https://nextjs.org)
@@ -28,6 +60,7 @@ Construida con tecnologías modernas, enfocada en buenas prácticas, rendimiento
 - [TailwindCSS](https://tailwindcss.com)
 - [GSAP](https://gsap.com)
 - [Figma](https://www.figma.com)
+- [Blender](https://blender.org)
 
 ---
 
