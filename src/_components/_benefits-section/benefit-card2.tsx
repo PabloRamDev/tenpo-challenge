@@ -46,7 +46,7 @@ useImperativeHandle(
       className="relative flex flex-col w-full items-center justify-start gap-md md:gap-xl bg-primary-400 rounded-xl p-lg md:py-xl aspect-square overflow-clip"
     >
       <div className="flex flex-col gap-xs">
-        <h3 className="font-graphie text-lg 2xl:text-xl text-center leading-[90%]">
+        <h3 className="font-graphie text-lg text-center leading-[90%]">
           {title}
         </h3>
         <p className="w-full text-center">{description}</p>
@@ -57,9 +57,9 @@ useImperativeHandle(
           id={id}
           src={image}
           alt="benefit card image"
-          width={300}
-          height={300}
-          className="w-[110px] 2xl:w-full h-full"
+          width={220}
+          height={220}
+          className="w-[110px] 2xl:w-[220px]"
         />
       </div>
     </div>
