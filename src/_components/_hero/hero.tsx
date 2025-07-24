@@ -114,8 +114,8 @@ export default function Hero() {
           <Image
             src={"/images/tepago-go-white.png"}
             alt="Phone with tepago app"
-            width={502}
-            height={502}
+            width={400}
+            height={400}
           />
         </div>
         <div className="flex flex-col gap-sm">
@@ -142,8 +142,8 @@ export default function Hero() {
         <Image
           src={"/images/hero-phone.png"}
           alt="Phone with tepago app"
-          width={648}
-          height={648}
+          width={580}
+          height={580}
         />
       </div>
 
@@ -154,8 +154,8 @@ export default function Hero() {
         <Image
           src={"/images/moneybag.png"}
           alt="moneybag 3d emoji"
-          width={250}
-          height={250}
+          width={220}
+          height={220}
           sizes="(max-width: 768px) 100px, (max-width: 1200px) 250px, 250px"
         />
       </div>
@@ -167,8 +167,8 @@ export default function Hero() {
         <Image
           src={"/images/pig.png"}
           alt="pig 3d emoji"
-          width={452}
-          height={452}
+          width={400}
+          height={400}
         />
       </div>
     </section>
