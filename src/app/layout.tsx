@@ -5,7 +5,6 @@ import "./globals.css";
 import Header from "@/_components/_ui/_header/header";
 import Footer from "@/_components/_ui/_footer/_footer";
 
-;
 const openSans = Open_Sans({
   variable: "--font-open-sans",
   subsets: ["latin"],
@@ -16,25 +15,21 @@ const graphie = localFont({
     {
       path: "../../public/fonts/GraphieRegular.otf",
       weight: "400",
-      style: "normal"
+      style: "normal",
     },
     {
       path: "../../public/fonts/GraphieExtraBold.otf",
       weight: "700",
-      style: "normal"
+      style: "normal",
     },
   ],
-  variable: "--font-graphie"
-})
-
-
+  variable: "--font-graphie",
+});
 
 export const metadata: Metadata = {
   title: "Tepago - Tenpo Challenge",
   description: "Diseñado y desarrollado por Pabloram.dev",
 };
-
-
 
 export default function RootLayout({
   children,
@@ -46,7 +41,7 @@ export default function RootLayout({
       <body
         className={`flex flex-col ${openSans.variable} ${graphie.variable} antialiased bg-neutral-0 min-h-screen max-w-screen overflow-x-hidden`}
       >
-       <Header /> 
+        <Header />
         {children}
         <Footer />
       </body>
