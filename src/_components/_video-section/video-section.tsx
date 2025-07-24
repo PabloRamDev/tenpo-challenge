@@ -98,7 +98,7 @@ export default function VideoSection() {
 
         <div className="relative top-0 transform  md:translate-x-none bg-primary-400 rounded-full md:right-0 justify-self-end h-auto w-[100%] md:w-auto md:h-full md:bg-radial aspect-square ">
           <canvas
-            className="absolute top-1/2 left-1/2 h-[500px] md:h-[1000px] w-auto -translate-x-[45%] -translate-y-[55%]"
+            className="absolute top-1/2 left-1/2 h-[500px] md:h-[800px] w-auto -translate-x-[45%] -translate-y-[55%]"
             ref={canvasRef}
           />
         </div>
